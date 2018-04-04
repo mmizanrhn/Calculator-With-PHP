@@ -12,4 +12,15 @@ $cars = array(
   echo $cars[2][0]." Stocks ".$cars[2][1]." Sold ".$cars[2][2]."<br>";
   echo $cars[3][0]." Stocks ".$cars[3][1]." Sold ".$cars[3][2];
 
+  echo "<br>";
+
+  for ($row=0; $row < 4; $row++) { 
+    echo "<p><b>Row number $row</b></p>";
+    echo "<ul>";
+    for ($col=0; $col < 3; $col++) { 
+        echo "<li>".$cars[$row][$col]."</li>";
+    }
+    echo "</ul>";
+  }
+
 ?>
